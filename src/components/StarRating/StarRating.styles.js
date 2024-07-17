@@ -3,8 +3,8 @@ import styled from "styled-components";
 // Styled component for the star
 export const Star = styled.span`
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin-right: 4px;
   background-color: ${({ filled }) =>
     filled ? "#FFD700" : "#e0e0e0"}; // Gold for filled stars, gray for empty

@@ -9,7 +9,9 @@ import QualityStandardsIcon from "../../assets/icons/QualityStandards.svg";
 import { GreenButton } from "../../components/buttons/GreenButton.jsx";
 import { ProductsData } from "../../utils/ProductsData.js";
 import { theme } from "../../theme.js";
-import StarRating from "../../components/StarRating/StarRating.jsx";
+import ProductCard from "../../components/Cards/Product/ProductCard.jsx";
+import FeaturedProductsSection from "../../components/sections/HomePage/FeaturedProducts/FeaturedProductsSection.jsx";
+import FeaturedOrganicSection from "../../components/sections/HomePage/FeaturedOrganicSection/FeaturedOrganicSection.jsx";
 
 const Homepage = () => {
   return (
@@ -66,47 +68,12 @@ const Homepage = () => {
           </Styles.TextContent>
         </Styles.AboutUSWrapper>
       </Styles.AboutUsSection>
+
       {/* Products Section */}
-      <Styles.FeaturedProductSection>
-        <h1>Our Products</h1>
-        <Styles.ProductsSection>
-          {ProductsData.map((product) => (
-            <Styles.ProductCardWrapper>
-              <Styles.CategoryTag>
-                <p>{product.category}</p>
-              </Styles.CategoryTag>
-              <Styles.ProductImage src={product.imgsrc} />
-              <Styles.ProductTitle>{product.title}</Styles.ProductTitle>
-              <Styles.Divider />
-              <Styles.ProductDetailWrapper>
-                {product.new_price ? (
-                  <Styles.ProductPriceWrapper>
-                    <Styles.ProductPrice
-                      color={theme.colors.accent.grey}
-                      decoration={true}
-                    >{`$${Number(product.price).toFixed(
-                      2
-                    )}`}</Styles.ProductPrice>
-                    <Styles.ProductPrice
-                      color={theme.colors.primary.darkBlue}
-                    >{`$${Number(product.new_price).toFixed(
-                      2
-                    )}`}</Styles.ProductPrice>
-                  </Styles.ProductPriceWrapper>
-                ) : (
-                  <Styles.ProductPrice
-                    color={theme.colors.primary.darkBlue}
-                  >{`$${Number(product.price).toFixed(
-                    2
-                  )}`}</Styles.ProductPrice>
-                )}
-                <StarRating rating={product.rating} />
-              </Styles.ProductDetailWrapper>
-            </Styles.ProductCardWrapper>
-          ))}
-        </Styles.ProductsSection>
-        <GreenButton title="Load More" showArrow />
-      </Styles.FeaturedProductSection>
+      <FeaturedProductsSection />
+
+      {/* organic products */}
+      <FeaturedOrganicSection />
     </Styles.HomepageMain>
   );
 };

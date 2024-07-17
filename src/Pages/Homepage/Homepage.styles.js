@@ -2,8 +2,6 @@ import styled from "styled-components";
 import HeroBg from "../../assets/Homepage/BannerBg.png";
 import HeroImg from "../../assets/Homepage/BannerImage.png";
 
-import AboutBgImg from "../../assets/AboutUs/HomePageImg.png";
-
 export const HomepageMain = styled.main`
   display: flex;
   flex-direction: column;
@@ -125,95 +123,4 @@ export const FeatureItem = styled.li`
     color: ${(props) => props.theme.colors.neutral.darkGrey};
     margin: 0px;
   }
-`;
-
-export const FeaturedProductSection = styled.section`
-  /* padding: 8rem; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  & h1 {
-    font-size: ${(props) => props.theme.fontSizes.sectionHeading};
-    font-weight: bolder;
-    color: ${(props) => props.theme.colors.primary.darkBlue};
-    margin: 0px;
-  }
-`;
-
-export const ProductsSection = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 100%; /* Ensure it doesn't exceed viewport width */
-  overflow-x: hidden; /* Hide horizontal overflow */
-`;
-
-export const ProductCardWrapper = styled.div`
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-
-  padding: 2rem 1rem 1rem 1rem;
-  border-radius: 1.6rem;
-  border: 2px solid;
-  border-color: ${(props) => props.theme.colors.neutral.lightGrey};
-`;
-
-export const CategoryTag = styled.div`
-  width: max-content;
-  color: white;
-  padding: 0.5rem 0.5rem;
-  border-radius: 0.5rem;
-  background-color: ${(props) => props.theme.colors.primary.darkBlue};
-
-  & p {
-    font-size: 16px;
-    font-weight: bolder;
-    color: white;
-    margin: 0;
-  }
-`;
-
-export const ProductImage = styled.img`
-  width: 100%;
-  height: 200px;
-  border-radius: 0.5rem;
-  object-fit: contain;
-  background-color: transparent;
-`;
-
-export const ProductTitle = styled.h4`
-  white-space: pre-line;
-  color: ${(props) => props.theme.colors.primary.darkBlue};
-  margin: 1rem 0rem 0rem 0rem;
-`;
-
-export const ProductDetailWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 8px;
-`;
-
-export const ProductPriceWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 0.8rem;
-`;
-
-export const ProductPrice = styled.p`
-  font-size: ${(props) => props.theme.fontSizes.medium};
-  color: ${(props) => props.color};
-  font-weight: bolder;
-  text-decoration-line: ${(props) => props.decoration && "line-through"};
-  margin: 0;
-`;
-
-export const Divider = styled.div`
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
 `;

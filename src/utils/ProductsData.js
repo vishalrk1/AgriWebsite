@@ -6,6 +6,9 @@ import MungBeans from "../assets/Products/mung_bean.png";
 import BrownHazelnut from "../assets/Products/brown_hazelnut.png";
 import EggsImg from "../assets/Products/eggs.png";
 import ElaichiRusk from "../assets/Products/elaichi_rusk.png";
+import Broccoli from "../assets/Products/broccoli.png";
+import OnionImg from "../assets/Products/onion.png";
+import CabbageImg from "../assets/Products/cabbage.png";
 
 export const ProductsData = [
   {
@@ -16,6 +19,8 @@ export const ProductsData = [
     category: "Vegetable",
     imgsrc: calabrese_broccoli,
     featured: true,
+    isOrganic: true,
+    isFeaturedOrganic: false,
   },
   {
     title: "Fresh Bananas",
@@ -25,6 +30,8 @@ export const ProductsData = [
     category: "Fresh",
     imgsrc: Banana,
     featured: true,
+    isOrganic: false,
+    isFeaturedOrganic: false,
   },
   {
     title: "White Nuts",
@@ -34,6 +41,8 @@ export const ProductsData = [
     category: "Millets",
     imgsrc: WhiteNuts,
     featured: true,
+    isOrganic: false,
+    isFeaturedOrganic: false,
   },
   {
     title: "Vegan Red Tomatos",
@@ -43,6 +52,8 @@ export const ProductsData = [
     category: "Vegetable",
     imgsrc: RedTomato,
     featured: true,
+    isOrganic: true,
+    isFeaturedOrganic: true,
   },
   {
     title: "Mung Bean",
@@ -52,6 +63,8 @@ export const ProductsData = [
     category: "Health",
     imgsrc: MungBeans,
     featured: true,
+    isOrganic: false,
+    isFeaturedOrganic: false,
   },
   {
     title: "Brown Hezalnut",
@@ -61,6 +74,8 @@ export const ProductsData = [
     category: "Nuts",
     imgsrc: BrownHazelnut,
     featured: true,
+    isOrganic: false,
+    isFeaturedOrganic: false,
   },
   {
     title: "Eggs",
@@ -70,6 +85,8 @@ export const ProductsData = [
     category: "Fresh",
     imgsrc: EggsImg,
     featured: true,
+    isOrganic: false,
+    isFeaturedOrganic: false,
   },
   {
     title: "Zelco Suji Elaichi Rusk",
@@ -79,5 +96,40 @@ export const ProductsData = [
     category: "Fresh",
     imgsrc: ElaichiRusk,
     featured: true,
+    isOrganic: false,
+    isFeaturedOrganic: false,
+  },
+  {
+    title: "Broccolie",
+    rating: 5,
+    price: 20,
+    new_price: 15,
+    category: "Vegetable",
+    imgsrc: Broccoli,
+    featured: false,
+    isOrganic: true,
+    isFeaturedOrganic: true,
+  },
+  {
+    title: "Onion",
+    rating: 4,
+    price: 20,
+    new_price: 17.5,
+    category: "Vegetable",
+    imgsrc: OnionImg,
+    featured: false,
+    isOrganic: true,
+    isFeaturedOrganic: true,
+  },
+  {
+    title: "Cabbage",
+    rating: 4,
+    price: 20,
+    new_price: 14.5,
+    category: "Vegetable",
+    imgsrc: CabbageImg,
+    featured: false,
+    isOrganic: true,
+    isFeaturedOrganic: true,
   },
 ];
