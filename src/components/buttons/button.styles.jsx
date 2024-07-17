@@ -14,9 +14,22 @@ export const YellowButton = styled.button`
   color: ${(props) => props.theme.colors.primary.darkBlue};
 `;
 
+export const GreenButton = styled.button`
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.1rem 1rem;
+  border: 0;
+  border-radius: 12px;
+  background-color: ${(props) => props.theme.colors.primary.darkBlue};
+  color: white;
+`;
+
 export const BtnTitle = styled.p`
-  color: ${(props) => props.theme.colors.primary.darkBlue};
-  font-size: medium;
+  color: ${(props) => props.txtcolor};
+  font-size: small;
   font-weight: bold;
   white-space: pre-line;
 `;
