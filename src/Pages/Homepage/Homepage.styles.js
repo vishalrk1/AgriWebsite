@@ -5,7 +5,6 @@ import HeroImg from "../../assets/Homepage/BannerImage.png";
 export const HomepageMain = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 `;
 
 export const HeroSection = styled.div`

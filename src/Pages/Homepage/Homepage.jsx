@@ -1,17 +1,15 @@
 import React from "react";
 import * as Styles from "./Homepage.styles";
 import { YellowButton } from "../../components/buttons/YellowButton";
+import { GreenButton } from "../../components/buttons/GreenButton.jsx";
 
 import BannerSection from "../../components/sections/HomePage/BannerSection/BannerSection.jsx";
 import AboutBgImg from "../../assets/AboutUs/HomePageImg.png";
 import OrganicIcon from "../../assets/icons/OrganicFood.svg";
 import QualityStandardsIcon from "../../assets/icons/QualityStandards.svg";
-import { GreenButton } from "../../components/buttons/GreenButton.jsx";
-import { ProductsData } from "../../utils/ProductsData.js";
-import { theme } from "../../theme.js";
-import ProductCard from "../../components/Cards/Product/ProductCard.jsx";
 import FeaturedProductsSection from "../../components/sections/HomePage/FeaturedProducts/FeaturedProductsSection.jsx";
 import FeaturedOrganicSection from "../../components/sections/HomePage/FeaturedOrganicSection/FeaturedOrganicSection.jsx";
+import EcoFriendSection from "../../components/sections/HomePage/EcoDetailSection/EcoFriendSection.jsx";
 
 const Homepage = () => {
   return (
@@ -68,12 +66,12 @@ const Homepage = () => {
           </Styles.TextContent>
         </Styles.AboutUSWrapper>
       </Styles.AboutUsSection>
-
       {/* Products Section */}
       <FeaturedProductsSection />
-
       {/* organic products */}
       <FeaturedOrganicSection />
+      {/* Eco Friendly section */}
+      <EcoFriendSection />
     </Styles.HomepageMain>
   );
 };

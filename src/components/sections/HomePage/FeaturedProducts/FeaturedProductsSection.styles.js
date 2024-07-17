@@ -5,6 +5,7 @@ export const FeaturedProductSection = styled.section`
   flex-direction: column;
   align-items: ${(props) => (props.iscenter ? "center" : "start")};
   background-color: ${(props) => props.backgroundClr};
+  padding: 4rem 0rem;
 
   & h1 {
     font-size: ${(props) => props.theme.fontSizes.sectionHeading};
