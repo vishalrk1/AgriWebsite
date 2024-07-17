@@ -123,3 +123,42 @@ export const FeatureItem = styled.li`
     margin: 0px;
   }
 `;
+
+export const CategoriesSection = styled.section`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 6rem 0rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: ${(props) => props.theme.colors.neutral.lightGreen};
+`;
+
+export const CategoryCard = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+`;
+
+export const CategoryImage = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+`;
+
+export const CatButton = styled.button`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 4rem;
+  font-size: large;
+  font-weight: bolder;
+  color: ${props => props.theme.colors.primary.darkBlue};
+  background-color: ${props => props.theme.colors.primary.white};
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+`;

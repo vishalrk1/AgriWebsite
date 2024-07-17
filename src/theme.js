@@ -14,6 +14,7 @@ export const theme = {
     neutral: {
       lightGrey: "#F9F8F8",
       veryLightGreen: "#EFF6F1",
+      lightGreen: "#F1F8F4",
     },
   },
   fonts: {

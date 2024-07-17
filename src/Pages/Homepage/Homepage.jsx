@@ -11,6 +11,10 @@ import FeaturedProductsSection from "../../components/sections/HomePage/Featured
 import FeaturedOrganicSection from "../../components/sections/HomePage/FeaturedOrganicSection/FeaturedOrganicSection.jsx";
 import EcoFriendSection from "../../components/sections/HomePage/EcoDetailSection/EcoFriendSection.jsx";
 
+import JuiceCatImg from "../../assets/Homepage/JuiceCat.jpg"
+import OrganicCatImg from "../../assets/Homepage/OrganicFoodCat.jpg"
+import CookieCatImg from "../../assets/Homepage/CookieCat.jpg"
+
 const Homepage = () => {
   return (
     <Styles.HomepageMain>
@@ -72,6 +76,21 @@ const Homepage = () => {
       <FeaturedOrganicSection />
       {/* Eco Friendly section */}
       <EcoFriendSection />
+      {/* Category Section */}
+      <Styles.CategoriesSection>
+        <Styles.CategoryCard>
+          <Styles.CategoryImage src={JuiceCatImg}/>
+          <Styles.CatButton>Organic Juice</Styles.CatButton>
+        </Styles.CategoryCard>
+        <Styles.CategoryCard>
+          <Styles.CategoryImage src={OrganicCatImg}/>
+          <Styles.CatButton>Organic Food</Styles.CatButton>
+        </Styles.CategoryCard>
+        <Styles.CategoryCard>
+          <Styles.CategoryImage src={CookieCatImg}/>
+          <Styles.CatButton>Nut Cookies</Styles.CatButton>
+        </Styles.CategoryCard>
+      </Styles.CategoriesSection>
     </Styles.HomepageMain>
   );
 };
